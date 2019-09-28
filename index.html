@@ -158,23 +158,22 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<p>title: markdown 不显示图片</p>
-<hr>
-<h1 id="无法插入图片到markdown"><a href="#无法插入图片到markdown" class="headerlink" title="无法插入图片到markdown"></a>无法插入图片到markdown</h1><p>&nbsp;  &nbsp;  最近在学习搭建博客，小萌新想要有一个自己的博客。在整个过程中，遇到了许多问题，其中一个问题是无法插入图片到markdown中。经过查了很多资料后，终于找到了解决办法。<br>&nbsp;  &nbsp;  最开始，无论是本地还是浏览器的图片都无法插入到markdown中，经查阅资料后，发现了一个解决办法。要将图片保存到GitHub中，通过GitHub来访问图片。<br> &nbsp;  &nbsp; 原文链接： <a href="https://www.cnblogs.com/cxint/p/7200164.html" target="_blank" rel="noopener">https://www.cnblogs.com/cxint/p/7200164.html</a>  </p>
-<h3 id="将图片保存在GitHub中-通过仓库地址访问"><a href="#将图片保存在GitHub中-通过仓库地址访问" class="headerlink" title="将图片保存在GitHub中,通过仓库地址访问"></a>将图片保存在GitHub中,通过仓库地址访问</h3><p>1、<font color="green" size="4">首先将GitHub中的仓库克隆到本地计算机</font><br><br><br> &nbsp;在GitHub中 找到仓库路径，并复制</p>
+<h2 id="title-用hexo搭建博客时出现的问题"><a href="#title-用hexo搭建博客时出现的问题" class="headerlink" title="title: 用hexo搭建博客时出现的问题"></a>title: 用hexo搭建博客时出现的问题</h2><h1 id="无法插入图片到markdown"><a href="#无法插入图片到markdown" class="headerlink" title="无法插入图片到markdown"></a>无法插入图片到markdown</h1><p>&nbsp;  &nbsp;  最近在学习搭建博客，小萌新想要有一个自己的博客。在整个过程中，遇到了许多问题，其中一个问题是无法插入图片到markdown中。经过查了很多资料后，终于找到了解决办法。<br>&nbsp;  &nbsp;  最开始，无论是本地还是浏览器的图片都无法插入到markdown中，经查阅资料后，发现了一个解决办法。要将图片保存到GitHub中，通过GitHub来访问图片。<br> &nbsp;  &nbsp; 原文链接： <a href="https://www.cnblogs.com/cxint/p/7200164.html" target="_blank" rel="noopener">https://www.cnblogs.com/cxint/p/7200164.html</a>  </p>
+<h3 id="将图片保存在GitHub中-通过仓库地址访问"><a href="#将图片保存在GitHub中-通过仓库地址访问" class="headerlink" title="将图片保存在GitHub中,通过仓库地址访问"></a>将图片保存在GitHub中,通过仓库地址访问</h3><p><font color="green" size="4">首先将GitHub中的仓库克隆到本地计算机</font><br><br><br> &nbsp;在GitHub中 找到仓库路径，并复制</p>
 <p><img src="https://github.com/MaJ66/MaJ66.github.io/raw/master/img/firstblog_img/1.PNG" alt="图片"><br><br><br></p>
 <p> &nbsp;打开终端，切换到D盘，将仓库克隆到本地计算机（ git clone ）<br><br><br><img src="https://github.com/MaJ66/MaJ66.github.io/raw/master/img/firstblog_img/2.PNG" alt="图片"></p>
 <p><br><br></p>
 <p>克隆完成后，打开D盘能够看见多了一个仓库名的文件夹，克隆成功<br><br><br><img src="https://github.com/MaJ66/MaJ66.github.io/raw/master/img/firstblog_img/3.PNG" alt="图片"></p>
 <p><br><br></p>
-<p>2、 <font color="green" size="4"> 然后打开该文件夹，找到img路径，添加图片。也可以把每一次的博客的图片存放到一个文件夹内  <br><br> <img src="https://github.com/MaJ66/MaJ66.github.io/raw/master/img/firstblog_img/4.PNG" alt="图片"></font></p>
+<p> <font color="green" size="4"> 然后打开该文件夹，找到img路径，添加图片。也可以把每一次的博客的图片存放到一个文件夹内  <br><br> <img src="https://github.com/MaJ66/MaJ66.github.io/raw/master/img/firstblog_img/4.PNG" alt="图片"></font></p>
 <p><br><br></p>
 <p>接着在cmd中切换到这个仓库的文件夹下（我的是MaJ66.github.io）<br>然后依次输入：<br>&nbsp;&nbsp;   git add . （注意：&nbsp;add后有一个”   .  “)<br>&nbsp;&nbsp;  git commit -m “文件描述”<br>&nbsp;&nbsp; git push orgin master  &nbsp;&nbsp;  (这一步我打字过程字符出现了错误，小伙伴们也要细心)<br><img src="https://github.com/MaJ66/MaJ66.github.io/raw/master/img/firstblog_img/4.1.PNG" alt="图片"><br><br><br></p>
 <p>这样就成功将图片存到了仓库中，打开仓库可以查看到<br><img src="https://github.com/MaJ66/MaJ66.github.io/raw/master/img/firstblog_img/5.PNG" alt="图片"><br><br><br></p>
-<p>3、<font size="4" color="green">接着通过仓库地址就可以插入图片了</font><br>  插入图片的代码是:</p>
+<p><font size="4" color="green">接着通过仓库地址就可以插入图片了</font><br>  插入图片的代码是:</p>
 <p><img src="https://github.com/MaJ66/MaJ66.github.io/raw/master/img/firstblog_img/6.PNG" alt="图片"><br> <br><br><br>  小括号内填你的图片的url</p>
 <p><font size="4" color="blue">但是随后又产生了问题，图片还是不能显示，经查验后发现，需要将地址中的<strong>blob</strong>改为<strong>raw</strong>  ,之后就成功显示了图片</font></p>
 <p><img src="https://github.com/MaJ66/MaJ66.github.io/raw/master/img/firstblog_img/7.PNG" alt="图片"></p>
+<hr>
 <p><font size="3">本人小萌新一枚，希望能够对大家有所帮助<font></font></font></p>
 
       
