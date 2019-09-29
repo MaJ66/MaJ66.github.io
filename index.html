@@ -211,7 +211,7 @@
 
 
 <p>3、<strong>自定义列表</strong><br>   dl、 dt、dd标签搭配使用</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;dl&gt;</span><br><span class="line">	&lt;dt&gt;早餐&lt;/dt&gt;</span><br><span class="line">	&lt;dd&gt;豆浆&lt;/dd&gt;</span><br><span class="line">	&lt;dt&gt;午餐&lt;/dt&gt;</span><br><span class="line">	&lt;dd&gt;米饭&lt;/dd&gt;</span><br><span class="line"></span><br><span class="line">&lt;/dl&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;dl&gt;</span><br><span class="line">&lt;dt&gt;Coffee&lt;/dt&gt;</span><br><span class="line">&lt;dd&gt;- black hot drink&lt;/dd&gt;</span><br><span class="line">&lt;dt&gt;Milk&lt;/dt&gt;</span><br><span class="line">&lt;dd&gt;- white cold drink&lt;/dd&gt;</span><br><span class="line">&lt;/dl&gt;</span><br></pre></td></tr></table></figure>
 
 <p>显示结果如下：<br></p>
 <dl>
@@ -229,15 +229,15 @@
 
 <p>结果显示如下：<br></p>
 <table border="1">
-    <caption>表的标题</caption>
-    <tr>
-        <th>姓名</th>
-        <th>学号</th>
-    </tr>
-    <tr>
-        <td>张三</td>
-        <td>001</td>
-    </tr>
+<caption>表的标题</caption>
+<tr>
+<th>姓名</th>
+<th>学号</th>
+</tr>
+<tr>
+<td>张三</td>
+<td>001</td>
+</tr>
 </table>
 
 <p>注意：表头的 th标签应该取代的是td而不是tr</p>
@@ -251,22 +251,23 @@
 
 <p>结果如下：<br></p>
  <table border="1">
-    <caption>表的标题</caption>
-    <tr>
-    <th>姓名</th>
-    <th>年龄</th>
-    </tr>
-    <tr>
-        <td>王五</td>
-        <td rowspan="3">18</td>
-    </tr>
-    <tr>
-        <td>张三</td>
-    </tr>
-    <tr>
-        <td>里斯</td>
+  <caption>表的标题</caption>
+ <tr>
+  <th>姓名</th>
+ <th>年龄</th>
+ </tr>
+ <tr>
+ <td>王五</td>
+ <td rowspan="3">18</td>
+</tr>
+<tr>
+<td>张三</td>
+ </tr>
+ <tr>
+<td>里斯</td>
 
-<pre><code>&lt;/tr&gt;</code></pre></tr></table>
+ </tr>
+</table>
 
 
 
@@ -277,17 +278,16 @@
 
 <p>结果如下：<br></p>
 <table border="1">
-    <caption>表的标题</caption>
-    <tr>
-        <th>姓名</th>
-        <th colspan="2">电话</th>
-    </tr>
-    <tr>
-        <td>张三</td>
-        <td>001</td>
-        <td>002</td>
-    </tr>
-
+ <caption>表的标题</caption>
+ <tr>
+ <th>姓名</th>
+ <th colspan="2">电话</th>
+</tr>
+  <tr>
+<td>张三</td>
+ <td>001</td>
+ <td>002</td>
+ </tr>
 </table>
 
 <p>注意：无论rowspan还是cowspan，及无论是行合并还是列合并，他们都是写在td标签内的</p>
