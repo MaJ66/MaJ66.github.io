@@ -170,10 +170,20 @@
 <li>headers 、nav 、 article 、 footer结构化标签 </li>
 </ul>
 <hr>
+<br>
+
 <h2 id="HTML5的基本标签"><a href="#HTML5的基本标签" class="headerlink" title="HTML5的基本标签"></a>HTML5的基本标签</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line">&lt;! doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">&lt;title&gt;页面标题&lt;/title&gt;          </span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"> &lt;h1&gt;我的第一个标题&lt;/h1&gt;          </span><br><span class="line">&lt;p&gt;我的第一个段落。&lt;/p&gt;</span><br><span class="line">&lt;sub&gt;上标&lt;/sub&gt;</span><br><span class="line">&lt;sup&gt;下标&lt;/sup&gt;</span><br><span class="line">&lt;del&gt;删除&lt;/del&gt;</span><br><span class="line">&lt;strong&gt;加粗&lt;/strong&gt;</span><br><span class="line">&lt;i&gt;斜体&lt;/i&gt;</span><br><span class="line">&lt;pre&gt;使用该标签时，空格能够被显示&lt;/pre&gt;       </span><br><span class="line">&lt;q&gt;引用一句话&lt;/q&gt;</span><br><span class="line">&lt;img src=&quot;d:/img/a.jpg&quot;&gt;         //插入图片  图片路径写在属性src内  </span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
 <br>
 
+<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><ul>
+<li>链接数据：<br>1、文本链接<br>2、图片链接</li>
+<li>属性：<br> 1、href属性<br> 2、 name属性</li>
+<li>img标签属性：<br>  alt:替换文本属性</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
 <h2 id="HTML5样式"><a href="#HTML5样式" class="headerlink" title="HTML5样式"></a>HTML5样式</h2><p>1、标签<br> style:  样式定义<br> link:   资源引用</p>
 <p>2、属性：<br>rel=”stylesheet” :外部样式表<br>type=”text/css” ：引入文档的类型<br>margin-left : 边距</p>
 <p>3、三种样式引用方法</p>
@@ -222,6 +232,9 @@
 </dl>
 
 <hr>
+<br>
+
+
 <h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><hr>
 <p>1、标签</p>
 <p>行：tr<br>列：td<br>表头：th<br>表格的标题用 caption<br>表格的边框属性： border<br>同样在标签内可以设置属性</p>
@@ -292,16 +305,14 @@
 
 <p>注意：无论rowspan还是cowspan，及无论是行合并还是列合并，他们都是写在td标签内的</p>
 <br>
----
 
 
-
-
+<hr>
 <h2 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h2><hr>
 <p>1、 单选框 radio<br>   复选框： checkbox<br>   下拉选框 select option</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;form &gt;</span><br><span class="line">    用户名：&lt;input type=&quot;text&quot; &gt;&lt;br/&gt;</span><br><span class="line">    密码：&lt;input type=&quot;password&quot;&gt;&lt;br/&gt;</span><br><span class="line">    性别： &lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;male&quot;  checked&gt;男</span><br><span class="line">           &lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;female&quot;&gt;女     &lt;br/&gt;</span><br><span class="line"></span><br><span class="line">    爱好：   &lt;input type=&quot;checkbox&quot; name=&quot;aihao&quot; value=&quot;sing&quot;&gt; 唱歌</span><br><span class="line">            &lt;input type=&quot;checkbox&quot; name=&quot;aihao&quot; value=&quot;dance&quot;&gt; 跳舞</span><br><span class="line">           &lt;input type=&quot;checkbox&quot; name=&quot;aihao&quot; value=&quot;shopping&quot;&gt; 购物    &lt;br/&gt;</span><br><span class="line"></span><br><span class="line">    地区：&lt;select &gt;</span><br><span class="line">            &lt;option value=&quot;henan&quot;&gt; 河南&lt;/option&gt;</span><br><span class="line">            &lt;option value=&quot;beijing&quot;&gt; 北京  &lt;/option&gt;</span><br><span class="line">        &lt;/select&gt;&lt;br/&gt;</span><br><span class="line">   </span><br><span class="line">           &lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure>
 
-<p>结果如下：<br></p>
+<p>结果如下：</p>
 <form>
 用户名：<input type="text"><br>
 密 码：<input type="password"><br>
@@ -314,8 +325,19 @@
 
 </form>
 
+<hr>
+<br>
+## 背景
 
-<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2>
+
+
+
+
+
+
+<hr>
+<h2 id="HTML5的新标签"><a href="#HTML5的新标签" class="headerlink" title="HTML5的新标签"></a>HTML5的新标签</h2><hr>
+
       
 
       
