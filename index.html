@@ -218,7 +218,6 @@
 
 </dl>
 
-
 <hr>
 <h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><hr>
 <p>1、标签</p>
@@ -238,14 +237,14 @@
     </tr>
 </table>
 
-<p>注意：表头的 <th>标签应该取代的是</th><td>而不是</td><tr></tr></p>
+<p>注意：表头的 th标签应该取代的是td而不是tr</p>
 <p>2、<strong>表格的多行、多列合并</strong></p>
 <ul>
 <li>colspan :跨行合并</li>
 <li>rowspan: 跨列合并</li>
 </ul>
-<p>横跨三行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"> &lt;table border=&quot;1&quot;&gt;</span><br><span class="line">    &lt;caption&gt;表的标题&lt;/caption&gt;</span><br><span class="line">    &lt;tr &gt;</span><br><span class="line">    &lt;th&gt;姓名&lt;/th&gt;</span><br><span class="line">    &lt;th&gt;年龄&lt;/th&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;tr &gt;</span><br><span class="line">        &lt;td&gt;王五&lt;/td&gt;</span><br><span class="line">        &lt;td rowspan=&quot;3&quot;&gt;18&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;张三&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;里斯&lt;/td&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>横跨三行：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"> &lt;table border=&quot;1&quot;&gt;</span><br><span class="line">    &lt;caption&gt;表的标题&lt;/caption&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">    &lt;th&gt;姓名&lt;/th&gt;</span><br><span class="line">    &lt;th&gt;年龄&lt;/th&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;tr &gt;</span><br><span class="line">        &lt;td&gt;王五&lt;/td&gt;</span><br><span class="line">        &lt;td rowspan=&quot;3&quot;&gt;18&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;张三&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;里斯&lt;/td&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
 
 <p>结果如下：<br></p>
  <table border="1">
@@ -270,7 +269,7 @@
 
 
 
-<p>横跨两列：</p>
+<p><strong>横跨两列：</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;table border=&quot;1&quot;&gt;</span><br><span class="line">    &lt;caption&gt;表的标题&lt;/caption&gt;</span><br><span class="line">    &lt;tr &gt;</span><br><span class="line">        &lt;th&gt;姓名&lt;/th&gt;</span><br><span class="line">        &lt;th colspan=&quot;2&quot;&gt;电话&lt;/th&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;tr &gt;</span><br><span class="line">        &lt;td&gt;张三&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;001&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;002&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line"></span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
 
 <p>结果如下：<br></p>
@@ -288,29 +287,29 @@
 
 </table>
 
-<p>注意：无论rowspan还是cowspan，及无论是行合并还是列合并，他们都是写在<td>标签内的</td></p>
-<hr>
+<p>注意：无论rowspan还是cowspan，及无论是行合并还是列合并，他们都是写在td标签内的</p>
+<br>
+---
+
+
+
+
 <h2 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h2><hr>
 <p>1、 单选框 radio<br>   复选框： checkbox<br>   下拉选框 select option</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;form &gt;</span><br><span class="line">    用户名：&lt;input type=&quot;text&quot; &gt;&lt;br/&gt;</span><br><span class="line">    密码：&lt;input type=&quot;password&quot;&gt;&lt;br/&gt;</span><br><span class="line">    性别： &lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;male&quot;  checked&gt;男</span><br><span class="line">           &lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;female&quot;&gt;女     &lt;br/&gt;</span><br><span class="line"></span><br><span class="line">    爱好：   &lt;input type=&quot;checkbox&quot; name=&quot;aihao&quot; value=&quot;sing&quot;&gt; 唱歌</span><br><span class="line">            &lt;input type=&quot;checkbox&quot; name=&quot;aihao&quot; value=&quot;dance&quot;&gt; 跳舞</span><br><span class="line">           &lt;input type=&quot;checkbox&quot; name=&quot;aihao&quot; value=&quot;shopping&quot;&gt; 购物    &lt;br/&gt;</span><br><span class="line"></span><br><span class="line">    地区：&lt;select &gt;</span><br><span class="line">            &lt;option value=&quot;henan&quot;&gt; 河南&lt;/option&gt;</span><br><span class="line">            &lt;option value=&quot;beijing&quot;&gt; 北京  &lt;/option&gt;</span><br><span class="line">        &lt;/select&gt;&lt;br/&gt;</span><br><span class="line">   </span><br><span class="line">           &lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure>
 
 <p>结果如下：<br></p>
 <form>
-    用户名：<input type="text"><br>
-    密码：<input type="password"><br>
-    性别： <input type="radio" name="sex" value="male" checked>男
-           <input type="radio" name="sex" value="female">女     <br>
+用户名：<input type="text"><br>
+密 码：<input type="password"><br>
+性 别： <input type="radio" name="sex" value="male" checked>男
+<input type="radio" name="sex" value="female">女     <br>
 
-<pre><code>爱好：   &lt;input type=&quot;checkbox&quot; name=&quot;aihao&quot; value=&quot;sing&quot;&gt; 唱歌
-        &lt;input type=&quot;checkbox&quot; name=&quot;aihao&quot; value=&quot;dance&quot;&gt; 跳舞
-       &lt;input type=&quot;checkbox&quot; name=&quot;aihao&quot; value=&quot;shopping&quot;&gt; 购物    &lt;br/&gt;
+<p>爱 好：   <input type="checkbox" name="aihao" value="sing"> 唱歌<br> <input type="checkbox" name="aihao" value="dance"> 跳舞<br><input type="checkbox" name="aihao" value="shopping"> 购物    <br></p>
+<p>地 区：<select><br> <option value="henan"> 河南</option><br> <option value="beijing"> 北京  </option><br></select><br></p>
+<input type="submit" value="提交">
 
-地区：&lt;select &gt;
-        &lt;option value=&quot;henan&quot;&gt; 河南&lt;/option&gt;
-        &lt;option value=&quot;beijing&quot;&gt; 北京  &lt;/option&gt;
-    &lt;/select&gt;&lt;br/&gt;
-
-       &lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;</code></pre></form>
+</form>
 
 
 <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2>
