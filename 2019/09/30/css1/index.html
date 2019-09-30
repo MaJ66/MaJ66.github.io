@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="块级元素和行内元素  9/30/2019 8:56:24 PM   1、块级元素 ：常见块级元素有：  1&amp;lt;div&amp;gt; &amp;lt;p&amp;gt;   &amp;lt; h1&amp;gt;~&amp;lt;h6&amp;gt;  &amp;lt;ol&amp;gt;  &amp;lt;li&amp;gt;等  特点：  1、总是从新行开始，每个块级元素都占据一整行或多整行  2、宽、高、padding、margin都可以设置  3、可以容纳其他块级元素">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-30T14:14:39.176Z">
+<meta property="og:updated_time" content="2019-09-30T14:18:36.617Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
 <meta name="twitter:description" content="块级元素和行内元素  9/30/2019 8:56:24 PM   1、块级元素 ：常见块级元素有：  1&amp;lt;div&amp;gt; &amp;lt;p&amp;gt;   &amp;lt; h1&amp;gt;~&amp;lt;h6&amp;gt;  &amp;lt;ol&amp;gt;  &amp;lt;li&amp;gt;等  特点：  1、总是从新行开始，每个块级元素都占据一整行或多整行  2、宽、高、padding、margin都可以设置  3、可以容纳其他块级元素">
@@ -169,14 +169,49 @@
 
 <p>特点：<br>  1、总是从新行开始，每个块级元素都占据一整行或多整行<br>  2、宽、高、padding、margin都可以设置<br>  3、可以容纳其他块级元素<br>  4、默认宽度是100%</p>
 <p><strong>注意</strong>：文字类的块级元素里不能嵌套块级元素 例如：  <code>&lt;p&gt;  、&lt;h1&gt;~&lt;h6&gt; 、 &lt;dt&gt;</code> 等</p>
+<hr>
 <h2 id="2、-行内元素-："><a href="#2、-行内元素-：" class="headerlink" title="2、 行内元素 ："></a>2、 行内元素 ：</h2><p><strong>常见行内元素有：</strong>  <code>&lt;a&gt; 、 &lt;span&gt; 、 &lt;em&gt;、 &lt;strong&gt; 、&lt;del&gt;、 &lt;s&gt;、 &lt;ins&gt;、 &lt;u&gt;</code> , 其中<strong>span</strong>是最常见的行内元素</p>
 <p>特点：<br> 1、相邻行内元素都在一行上<br> 2、<strong>宽、高无效</strong> ，但水平方向的padding和margin可以设置<br> 3、默认宽度就是它本身的宽度,宽度随着内容的多少自适应变化    </p>
+<hr>
 <h2 id="3、行内块元素"><a href="#3、行内块元素" class="headerlink" title="3、行内块元素"></a>3、行内块元素</h2><p> 在行内元素中有几个特殊的标签  <code>&lt;img /&gt;&lt;input /&gt; &lt;td&gt;</code>可以对他们设置宽高和对齐属性，我们称之为行内块元素。例如：</p>
 <blockquote>
 <pre><code>&lt;input type=&quot;text&quot;  style=&quot;height:200px&quot; /&gt;
 &lt;input type=&quot;text&quot; style=&quot;height:200px&quot; /&gt;</code></pre></blockquote>
 <p>特点：<br> 1、和相邻行内元素在一行上<br> 2、默认宽度就是它本身内容的宽度<br> 3、宽度、行高、外边距、内边距都可以设置</p>
-<h2 id="4、标签显示模式转换"><a href="#4、标签显示模式转换" class="headerlink" title="4、标签显示模式转换"></a>4、标签显示模式转换</h2>
+<hr>
+<h2 id="4、标签显示模式转换-display"><a href="#4、标签显示模式转换-display" class="headerlink" title="4、标签显示模式转换:display"></a>4、标签显示模式转换:display</h2><p>1、块级标签转成行内标签：<br>语法：  display：inline;<br>2、行内标签转换成块级标签:<br>语法：  display: block;</p>
+<pre><code>&lt;div &gt;123&lt;/div &lt;!--块级元素--&gt;
+&lt;div&gt;456&lt;/div&gt;
+
+&lt;span&gt;789&lt;/span  &lt;!--行内元素--&gt;
+&lt;span&gt;123&lt;/span&gt;
+&lt;a href=&quot;#&quot;&gt;123&lt;/a&gt;
+&lt;a href=&quot;#&quot;&gt;123&lt;/a&gt;</code></pre><blockquote>
+<pre><code> &lt;style&gt;
+
+div{
+width: 200px;
+height: 100px;
+background-color: pink;
+display:inline;/*块级元素转成行内标签显示模式*/
+}
+
+span{
+height: 100px ;
+width: 200px;
+background-color: red;
+display: block;  /*行内元素转成块级标签显示模式*/
+}
+a{
+width: 50px;
+height: 20px;
+background-color: green;
+display: inline-block;/*行内元素转换成行内块标签显示模式*/
+
+}
+
+&lt;/style&gt;</code></pre></blockquote>
+
       
 
       
