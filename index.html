@@ -201,6 +201,9 @@
 <blockquote>
 <p> :target{}</p>
 </blockquote>
+<h2 id="复合选择器"><a href="#复合选择器" class="headerlink" title="复合选择器"></a>复合选择器</h2><p><strong>交集选择器</strong>：<br><br>        格式： 标签选择器.类选择器<br><br>        例如：p.red{}<br><br>        一般用的较少<br><br><br><br><strong>并集选择器</strong> :<br><br>   格式 ：选择器1 ,选择器2,选择器3 { color:red; }<br><br>   例如： h1 ,div, .one { color:red }<br></p>
+<p><strong>后代选择器</strong>（包含选择器）：<br><br> 用空格隔开 可以选择儿子 孙子 重孙子所有后代<br><br>    div p{color:red; }    //div下的p<br></p>
+<p><strong>子元素选择器</strong> ： 中间用&gt;连接<br><br>   这里的子是亲儿子，不包含孙子、重孙子<br><br>   例如：.class &gt; h3{color:red; }</p>
 
       
 
