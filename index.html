@@ -178,7 +178,7 @@
    }</code></pre></blockquote>
 <p>5<strong>、id选择器和类选择器的区别</strong><br><br>   类选择器相当于”名字“，可以重复多次使用<br>   id选择器相当于”身份证号“，不得重复，只允许使用一次</p>
 <p>6、<strong>通配符选择器</strong>： *代表所有选择器<br>   *{<br>          padding:0px;<br>          margin:0px;<br>   }</p>
-<p>7、<strong>伪类选择器</strong>：向某些选择器添加特殊效果<br>  <strong>链接伪类选择器:</strong></p>
+<p>7、<strong>伪类选择器</strong>：向某些选择器添加特殊效果<br><br>  <strong>链接伪类选择器:</strong></p>
 <pre><code>&gt;:link   未访问过的链接
 &gt; :visited已访问的链接
 &gt; :hover鼠标移动到链接上
@@ -204,6 +204,16 @@
 <h2 id="复合选择器"><a href="#复合选择器" class="headerlink" title="复合选择器"></a>复合选择器</h2><p><strong>交集选择器</strong>：<br><br>        格式： 标签选择器.类选择器<br><br>        例如：p.red{}<br><br>        一般用的较少<br><br><br><br><strong>并集选择器</strong> :<br><br>   格式 ：选择器1 ,选择器2,选择器3 { color:red; }<br><br>   例如： h1 ,div, .one { color:red }<br></p>
 <p><strong>后代选择器</strong>（包含选择器）：<br><br> 用空格隔开 可以选择儿子 孙子 重孙子所有后代<br><br>    div p{color:red; }    //div下的p<br></p>
 <p><strong>子元素选择器</strong> ： 中间用&gt;连接<br><br>   这里的子是亲儿子，不包含孙子、重孙子<br><br>   例如：.class &gt; h3{color:red; }</p>
+<h2 id="属性选择器-：选取标签带有某些特殊属性的选择器"><a href="#属性选择器-：选取标签带有某些特殊属性的选择器" class="headerlink" title="属性选择器 ：选取标签带有某些特殊属性的选择器"></a>属性选择器 ：选取标签带有某些特殊属性的选择器</h2><pre><code>用[]来表示
+标签名[属性名]
+标签名[属性名=&quot; 值&quot;]       选出属性等于某一值的
+标签名[属性名^=&quot;值&quot;]       ^=表示开头是某一值的
+标签名[属性名$=&quot;值&quot;]       $=表示结尾是某一值的
+标签名[属性名*=&quot;值&quot;]       *=表示包含某一值 在任意位置都可以</code></pre><h2 id="伪元素选择器（css3）"><a href="#伪元素选择器（css3）" class="headerlink" title="伪元素选择器（css3）:"></a>伪元素选择器（css3）:</h2><pre><code>::first-letter       第一个字
+::first-line       第一行
+::selection  当拖拉选中时侯，可以变化样式
+::before      （content ）    在某个标签前放置内容
+::after     某个标签后放置内容</code></pre><p><strong>选择器书写规范：</strong><br>div {}     //标签和括号之间空格<br><br>冒号之后空格 , 属性名之后不要有空格   font-size: 2px;<br><br>并集选择器中 每个标签占一行：<br><br>  div,<br><br>  h1,<br><br>   span{}<br></p>
 
       
 
