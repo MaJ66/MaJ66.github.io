@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="https://MaJ66.github.io">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="块级元素和行内元素  9/30/2019 8:56:24 PM   1、块级元素 ：常见块级元素有：  1&amp;lt;div&amp;gt; &amp;lt;p&amp;gt;   &amp;lt; h1&amp;gt;~&amp;lt;h6&amp;gt;  &amp;lt;ol&amp;gt;  &amp;lt;li&amp;gt;等  特点：  1、总是从新行开始，每个块级元素都占据一整行或多整行  2、宽、高、padding、margin都可以设置  3、可以容纳其他块级元素">
+  <meta name="description" content="CSS选择器： 1、元素选择器：根据元素的标签使用例如       p{         color:blue;       } 2、类选择器： “.”+类名   例如  .class{} &amp;lt;p class=&amp;quot;div&amp;quot;&amp;gt;你好&amp;lt;/p&amp;gt;  .div{       color:red; }可以结合元素选择器使用:  a.class{}。例如： &amp;gt;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://MaJ66.github.io/2019/09/30/css1/index.html">
+<meta property="og:url" content="https://MaJ66.github.io/2019/10/07/css选择器/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="块级元素和行内元素  9/30/2019 8:56:24 PM   1、块级元素 ：常见块级元素有：  1&amp;lt;div&amp;gt; &amp;lt;p&amp;gt;   &amp;lt; h1&amp;gt;~&amp;lt;h6&amp;gt;  &amp;lt;ol&amp;gt;  &amp;lt;li&amp;gt;等  特点：  1、总是从新行开始，每个块级元素都占据一整行或多整行  2、宽、高、padding、margin都可以设置  3、可以容纳其他块级元素">
+<meta property="og:description" content="CSS选择器： 1、元素选择器：根据元素的标签使用例如       p{         color:blue;       } 2、类选择器： “.”+类名   例如  .class{} &amp;lt;p class=&amp;quot;div&amp;quot;&amp;gt;你好&amp;lt;/p&amp;gt;  .div{       color:red; }可以结合元素选择器使用:  a.class{}。例如： &amp;gt;">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-30T14:26:45.909Z">
+<meta property="og:updated_time" content="2019-10-07T03:37:48.694Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="块级元素和行内元素  9/30/2019 8:56:24 PM   1、块级元素 ：常见块级元素有：  1&amp;lt;div&amp;gt; &amp;lt;p&amp;gt;   &amp;lt; h1&amp;gt;~&amp;lt;h6&amp;gt;  &amp;lt;ol&amp;gt;  &amp;lt;li&amp;gt;等  特点：  1、总是从新行开始，每个块级元素都占据一整行或多整行  2、宽、高、padding、margin都可以设置  3、可以容纳其他块级元素">
+<meta name="twitter:description" content="CSS选择器： 1、元素选择器：根据元素的标签使用例如       p{         color:blue;       } 2、类选择器： “.”+类名   例如  .class{} &amp;lt;p class=&amp;quot;div&amp;quot;&amp;gt;你好&amp;lt;/p&amp;gt;  .div{       color:red; }可以结合元素选择器使用:  a.class{}。例如： &amp;gt;">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,66 +154,55 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-css1" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-css选择器" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<h1 id="块级元素和行内元素"><a href="#块级元素和行内元素" class="headerlink" title="块级元素和行内元素"></a>块级元素和行内元素</h1><hr>
-<p> 9/30/2019 8:56:24 PM</p>
-<br>
+<h2 id="CSS选择器："><a href="#CSS选择器：" class="headerlink" title="CSS选择器："></a>CSS选择器：</h2><hr>
+<p>1、<strong>元素选择器</strong>：根据元素的标签使用<br>例如<br>       p{<br>         color:blue;<br>       }</p>
+<p>2、<strong>类选择器：</strong> “.”+类名<br>   例如  .class{}</p>
+<pre><code>&lt;p class=&quot;div&quot;&gt;你好&lt;/p&gt;
 
-<h2 id="1、块级元素-："><a href="#1、块级元素-：" class="headerlink" title="1、块级元素 ："></a>1、块级元素 ：</h2><p><strong>常见块级元素有：</strong> </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt; &lt;p&gt;   &lt; h1&gt;~&lt;h6&gt;  &lt;ol&gt;  &lt;li&gt;等</span><br></pre></td></tr></table></figure>
-
-<p>特点：<br>  1、总是从新行开始，每个块级元素都占据一整行或多整行<br>  2、宽、高、padding、margin都可以设置<br>  3、可以容纳其他块级元素<br>  4、默认宽度是100%</p>
-<p><strong>注意</strong>：文字类的块级元素里不能嵌套块级元素 例如：  <code>&lt;p&gt;  、&lt;h1&gt;~&lt;h6&gt; 、 &lt;dt&gt;</code> 等</p>
-<hr>
-<h2 id="2、-行内元素-："><a href="#2、-行内元素-：" class="headerlink" title="2、 行内元素 ："></a>2、 行内元素 ：</h2><p><strong>常见行内元素有：</strong>  <code>&lt;a&gt; 、 &lt;span&gt; 、 &lt;em&gt;、 &lt;strong&gt; 、&lt;del&gt;、 &lt;s&gt;、 &lt;ins&gt;、 &lt;u&gt;</code> , 其中<strong>span</strong>是最常见的行内元素</p>
-<p>特点：<br> 1、相邻行内元素都在一行上<br> 2、<strong>宽、高无效</strong> ，但水平方向的padding和margin可以设置<br> 3、默认宽度就是它本身的宽度,宽度随着内容的多少自适应变化    </p>
-<hr>
-<h2 id="3、行内块元素"><a href="#3、行内块元素" class="headerlink" title="3、行内块元素"></a>3、行内块元素</h2><p> 在行内元素中有几个特殊的标签  <code>&lt;img/&gt; 、&lt;input/&gt; 、&lt;td&gt;</code><strong>可以对他们设置宽高和对齐属性</strong>，我们称之为行内块元素。例如：</p>
+.div{
+      color:red;
+}</code></pre><p>可以结合元素选择器使用:  a.class{}。例如：<br></p>
+<pre><code>&gt;   a.div{ backgroundcolor: pink; }</code></pre><p>  即设置a标签中，class=”div”的样式</p>
+<p><strong>注意：</strong>类选择器命名规则： 可以查看css命名规范<br>   不要用纯数字<br>   较长的名字中间可以用”-“隔开，不要使用”<em>“, 因为js变量名是用”</em>“.</p>
+<p>3、<strong>多类名选择器</strong>:  各个类名中间用空格隔开</p>
+<p>4、id选择器：“#”开头+id名</p>
 <blockquote>
-<pre><code>&lt;input type=&quot;text&quot;  style=&quot;height:200px&quot; /&gt;
-&lt;input type=&quot;text&quot; style=&quot;height:200px&quot; /&gt;</code></pre></blockquote>
-<p>特点：<br> 1、和相邻行内元素在一行上<br> 2、默认宽度就是它本身内容的宽度<br> 3、<strong>宽度、行高、外边距、内边距都可以设置</strong></p>
-<hr>
-<h2 id="4、标签显示模式转换-display"><a href="#4、标签显示模式转换-display" class="headerlink" title="4、标签显示模式转换:display"></a>4、标签显示模式转换:display</h2><p>1、块级标签转成行内标签：<br>语法：  <strong>display：inline;</strong><br>2、行内标签转换成块级标签:<br>语法： ** display: block;**<br>3、行内标签转换成行内块标签：<br>语法:  <strong>display:inline-block;</strong></p>
-<p>例如HTML中有如下代码</p>
-<pre><code>&lt;div &gt;123&lt;/div       &lt;!--块级元素--&gt;
-&lt;div&gt;456&lt;/div&gt;
+<pre><code>&lt;div  id=&quot;dj&quot;&gt;妲己&lt;/div&gt;`
 
-&lt;span&gt;789&lt;/span      &lt;!--行内元素--&gt;
-&lt;span&gt;123&lt;/span&gt;
-&lt;a href=&quot;#&quot;&gt;123&lt;/a&gt;
-&lt;a href=&quot;#&quot;&gt;123&lt;/a&gt;</code></pre><p>则可以在css中设置样式：</p>
+   #dj{
+  color:pink;
+   }</code></pre></blockquote>
+<p>5<strong>、id选择器和类选择器的区别</strong><br><br>   类选择器相当于”名字“，可以重复多次使用<br>   id选择器相当于”身份证号“，不得重复，只允许使用一次</p>
+<p>6、<strong>通配符选择器</strong>： *代表所有选择器<br>   *{<br>          padding:0px;<br>          margin:0px;<br>   }</p>
+<p>7、<strong>伪类选择器</strong>：向某些选择器添加特殊效果<br>  <strong>链接伪类选择器:</strong></p>
+<pre><code>&gt;:link   未访问过的链接
+&gt; :visited已访问的链接
+&gt; :hover鼠标移动到链接上
+&gt; :active 选定的链接  鼠标点击没有松开时显示的状态
+&gt; 
+&gt;注意:要按顺序排列,不能乱序,一般只能用到 :hover
+&gt;记忆法： lv hao
+&gt;</code></pre><br>
+   **结构(位置)伪类选择器(css3**):<br>
+
 <blockquote>
-<pre><code>&lt;style&gt;
-
-div{          
-width: 200px;
-height: 100px;
-background-color: pink;
-display:inline;               /*块级元素转成行内标签显示模式*/
-}
-
-span{
-height: 100px ;
-width: 200px;
-background-color: red;
-display: block;                 /*行内元素转成块级标签显示模式*/
-}
-
-a{
-width: 50px;
-height: 20px;
-background-color: green;
-display: inline-block;          /*行内元素转换成行内块标签显示模式*/
-
-}
-
-&lt;/style&gt;</code></pre></blockquote>
+<pre><code> :first-child  :选取其父类元素的第一个子元素
+  :last-child  :选取其父类元素的最后一个元素
+  :nth-child(n)  :  选择第n个孩子
+: nth-child(odd) :奇数
+:nth-child(even) :偶数
+ :如果用公式n表示从0开始  n   2n  3n  2n+1 等
+   :nth-last-child  :从最后一个孩子开始数 倒数</code></pre></blockquote>
+<p><strong>目标伪类选择器</strong>:选中当前活动的目标元素</p>
+<blockquote>
+<p> :target{}</p>
+</blockquote>
 
       
 
@@ -293,7 +282,7 @@ display: inline-block;          /*行内元素转换成行内块标签显示模�
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://MaJ66.github.io/2019/09/30/css1/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://MaJ66.github.io/2019/10/07/css选择器/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -307,17 +296,8 @@ display: inline-block;          /*行内元素转换成行内块标签显示模�
   
 <nav id="article-nav">
   
-    <a href="/2019/10/07/css选择器/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/09/29/html/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/09/30/css1/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title"></div>
       <i class="icon-circle-right"></i>
     </a>

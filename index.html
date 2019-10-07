@@ -152,6 +152,97 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-css选择器" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="CSS选择器："><a href="#CSS选择器：" class="headerlink" title="CSS选择器："></a>CSS选择器：</h2><hr>
+<p>1、<strong>元素选择器</strong>：根据元素的标签使用<br>例如<br>       p{<br>         color:blue;<br>       }</p>
+<p>2、<strong>类选择器：</strong> “.”+类名<br>   例如  .class{}</p>
+<pre><code>&lt;p class=&quot;div&quot;&gt;你好&lt;/p&gt;
+
+.div{
+      color:red;
+}</code></pre><p>可以结合元素选择器使用:  a.class{}。例如：<br></p>
+<pre><code>&gt;   a.div{ backgroundcolor: pink; }</code></pre><p>  即设置a标签中，class=”div”的样式</p>
+<p><strong>注意：</strong>类选择器命名规则： 可以查看css命名规范<br>   不要用纯数字<br>   较长的名字中间可以用”-“隔开，不要使用”<em>“, 因为js变量名是用”</em>“.</p>
+<p>3、<strong>多类名选择器</strong>:  各个类名中间用空格隔开</p>
+<p>4、id选择器：“#”开头+id名</p>
+<blockquote>
+<pre><code>&lt;div  id=&quot;dj&quot;&gt;妲己&lt;/div&gt;`
+
+   #dj{
+  color:pink;
+   }</code></pre></blockquote>
+<p>5<strong>、id选择器和类选择器的区别</strong><br><br>   类选择器相当于”名字“，可以重复多次使用<br>   id选择器相当于”身份证号“，不得重复，只允许使用一次</p>
+<p>6、<strong>通配符选择器</strong>： *代表所有选择器<br>   *{<br>          padding:0px;<br>          margin:0px;<br>   }</p>
+<p>7、<strong>伪类选择器</strong>：向某些选择器添加特殊效果<br>  <strong>链接伪类选择器:</strong></p>
+<pre><code>&gt;:link   未访问过的链接
+&gt; :visited已访问的链接
+&gt; :hover鼠标移动到链接上
+&gt; :active 选定的链接  鼠标点击没有松开时显示的状态
+&gt; 
+&gt;注意:要按顺序排列,不能乱序,一般只能用到 :hover
+&gt;记忆法： lv hao
+&gt;</code></pre><br>
+   **结构(位置)伪类选择器(css3**):<br>
+
+<blockquote>
+<pre><code> :first-child  :选取其父类元素的第一个子元素
+  :last-child  :选取其父类元素的最后一个元素
+  :nth-child(n)  :  选择第n个孩子
+: nth-child(odd) :奇数
+:nth-child(even) :偶数
+ :如果用公式n表示从0开始  n   2n  3n  2n+1 等
+   :nth-last-child  :从最后一个孩子开始数 倒数</code></pre></blockquote>
+<p><strong>目标伪类选择器</strong>:选中当前活动的目标元素</p>
+<blockquote>
+<p> :target{}</p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/07/css选择器/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-css1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
