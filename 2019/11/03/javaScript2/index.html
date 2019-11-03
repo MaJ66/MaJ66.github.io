@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="javaScipt中的DOM及其相关操作2—–操作元素我们可以利用DOM操作元素来改变元素里面的内容、属性等。 1、 改变元素的内容(1)element.innerText  (2)element.innerHTML    注意：innerTetxt和innerHTML区别  1 innerText   不识别html标签  去除空格和换行     2、innerHTML   识别html标签">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-03T08:46:31.751Z">
+<meta property="og:updated_time" content="2019-11-03T09:08:47.849Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
 <meta name="twitter:description" content="javaScipt中的DOM及其相关操作2—–操作元素我们可以利用DOM操作元素来改变元素里面的内容、属性等。 1、 改变元素的内容(1)element.innerText  (2)element.innerHTML    注意：innerTetxt和innerHTML区别  1 innerText   不识别html标签  去除空格和换行     2、innerHTML   识别html标签">
@@ -164,7 +164,9 @@
 <p><strong>注意：innerTetxt和innerHTML区别</strong> <br></p>
 <p>1 innerText   不识别html标签  去除空格和换行     <br><br>2、innerHTML   识别html标签    保留空格和换行   【 使用最多】  <br></p>
 <p>例子： 要求：当我们点击了按钮，div里面的文字变为显示系统当前事件</p>
-<pre><code>&lt;script&gt;
+<pre><code>&lt;div&gt; 系统的当前时间&lt;/div&gt;
+
+&lt;script&gt;
 
 //1、获取元素
 var btn = document.querySelector(&apos;button&apos;);
@@ -196,36 +198,38 @@ p.innerText=getTime();  //页面一加载就直接显示
 <p>例子：当点击杨紫按钮时，呈现杨紫的图片，鼠标放在图片上提示“杨紫”。当点击李现按钮时，显示李现的图片，鼠标放在图片上提示“李现”。<br><br>分析：可以通过修改图片的src属性和title属性来实现</p>
 <pre><code>&lt;button id=&quot;yz&quot;&gt;杨紫&lt;/button&gt;
 &lt;button id=&quot;lx&quot;&gt;李现&lt;/button&gt;
-&lt;br&gt;
+&lt;br/&gt;
 &lt;img src=&quot;../image/lx.png&quot; alt=&quot;&quot; title=&quot;李现&quot;&gt;
 
 &lt;script&gt;
-//修改元素属性 src
 //1、获取元素   
 var yz = document.getElementById(&apos;yz&apos;);     //id
 var lx = document.getElementById(&apos;lx&apos;);       /id
 var  img =document.querySelector(&apos;img&apos;);      //标签
 
 //2、注册事件
-yz.onclick = function () {
+//当点击杨紫按钮时，scr、title都修改为杨紫的
+yz.onclick = function () {   
    img.src = &quot;../image/yz.jpg&quot;;              //修改img的src属性
    img.title=&quot;杨紫&quot;;                         //修改img的title属性
 }
 
-lx.onclick = function () {
+//当点击李现按钮时，scr、title都修改为李现的
+lx.onclick = function () {  
    img.src = &quot;../image/lx.png&quot;;      
    img.title=&quot;李现&quot;;
 }
 
-&lt;/script&gt;</code></pre><h2 id="3、修改样式属性"><a href="#3、修改样式属性" class="headerlink" title="3、修改样式属性"></a>3、修改样式属性</h2><p>样式属性操作：<br>    修改元素的大小、颜色、位置等样式 <br><br>1、element.style  行内样式操作          【如果样式较少，或者功能简单的情况下使用】  <br><br>2、element.className    类名样式操作    【我们可以通过修改元素的className更改元素的样式 ，适合于样式较多，或者功能复杂的情况下使用】    <br><br>【注意】：className会直接更改元素的类名，会覆盖以前的类名<br>3、如果想要保留原先的类名，我们可以使用多类名选择器  this.className=”change first”;  //添加多个类名</p>
-<p>例如：给div修改样式属性<br>    <div class="first">文字</div></p>
-<pre><code>&lt;script&gt;
+&lt;/script&gt;</code></pre><h2 id="3、修改样式属性"><a href="#3、修改样式属性" class="headerlink" title="3、修改样式属性"></a>3、修改样式属性</h2><p>样式属性操作：  修改元素的大小、颜色、位置等样式 <br><br>1、element.style  行内样式操作          【如果样式较少，或者功能简单的情况下使用】  <br><br>2、element.className    类名样式操作    【我们可以通过修改元素的className更改元素的样式 ，适合于样式较多，或者功能复杂的情况下使用】    <br><br>【注意】：className会直接更改元素的类名，会覆盖以前的类名<br>3、如果想要保留原先的类名，我们可以使用多类名选择器  this.className=”change first”;  //添加多个类名</p>
+<p>例如：给div修改样式属性</p>
+<pre><code>&lt;div class=&quot;first&quot;&gt;文字&lt;/div&gt;
+&lt;script&gt;
 var div =document.querySelector(&apos;.first&apos;);
 div.onclick=function () {
    //里面的属性采用驼峰命名法
-    this.style.backgroundColor = &apos;purple&apos;;    //修改背景颜色
-    this.style.color=&quot;#ccc&quot;;                //字体颜色
-    this.style.fontSize=&quot;18px&quot;;               //字体大小
+    this.style.backgroundColor = &apos;purple&apos;;//修改背景颜色
+    this.style.color=&quot;#ccc&quot;;//字体颜色
+    this.style.fontSize=&quot;18px&quot;;   //字体大小
 }
 &lt;/script&gt;</code></pre><p>但是以上方法修改样式，只适合修改较少的样式，如果样式较多的情况下，比较麻烦 。<br><br>若是需要修改的样式较多时，我们可以使用添加类名的方法 。</p>
 <p>如下：<br><br>我们先在css样式中添加一个类 ，来写改变后的样式</p>
@@ -241,7 +245,7 @@ background-color: purple;
 var p =document.querySelector(&apos;p&apos;);
 
 p.onclick=function () {
-this.className=&quot;change &quot;;   //让我们当前元素的类名改为了 change
+this.className=&quot;change &quot;;   //让我们当前元素的类名改为了 change ，这样就有了change类中的样式
 }
 
 &lt;/script&gt;</code></pre><p>【注意】：className会直接更改元素的类名，会覆盖以前的类名<br><br>如果想要保留原先的类名，我们可以使用多类名选择器  this.className=”change first”;  //添加多个类名</p>
