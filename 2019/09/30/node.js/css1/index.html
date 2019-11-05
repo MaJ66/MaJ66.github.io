@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="https://MaJ66.github.io">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="javaScipt中的DOM及其相关操作2—–操作元素我们可以利用DOM操作元素来改变元素里面的内容、属性等。 1、 改变元素的内容(1)element.innerText  (2)element.innerHTML    注意：innerTetxt和innerHTML区别  1 innerText   不识别html标签  去除空格和换行     2、innerHTML   识别html标签">
+  <meta name="description" content="块级元素和行内元素  9/30/2019 8:56:24 PM   1、块级元素 ：常见块级元素有：  1&amp;lt;div&amp;gt; &amp;lt;p&amp;gt;   &amp;lt; h1&amp;gt;~&amp;lt;h6&amp;gt;  &amp;lt;ol&amp;gt;  &amp;lt;li&amp;gt;等  特点：  1、总是从新行开始，每个块级元素都占据一整行或多整行  2、宽、高、padding、margin都可以设置  3、可以容纳其他块级元素">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://MaJ66.github.io/2019/11/03/javaScript2/index.html">
+<meta property="og:url" content="https://MaJ66.github.io/2019/09/30/node.js/css1/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="javaScipt中的DOM及其相关操作2—–操作元素我们可以利用DOM操作元素来改变元素里面的内容、属性等。 1、 改变元素的内容(1)element.innerText  (2)element.innerHTML    注意：innerTetxt和innerHTML区别  1 innerText   不识别html标签  去除空格和换行     2、innerHTML   识别html标签">
+<meta property="og:description" content="块级元素和行内元素  9/30/2019 8:56:24 PM   1、块级元素 ：常见块级元素有：  1&amp;lt;div&amp;gt; &amp;lt;p&amp;gt;   &amp;lt; h1&amp;gt;~&amp;lt;h6&amp;gt;  &amp;lt;ol&amp;gt;  &amp;lt;li&amp;gt;等  特点：  1、总是从新行开始，每个块级元素都占据一整行或多整行  2、宽、高、padding、margin都可以设置  3、可以容纳其他块级元素">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-03T09:08:47.849Z">
+<meta property="og:updated_time" content="2019-09-30T14:26:45.909Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="javaScipt中的DOM及其相关操作2—–操作元素我们可以利用DOM操作元素来改变元素里面的内容、属性等。 1、 改变元素的内容(1)element.innerText  (2)element.innerHTML    注意：innerTetxt和innerHTML区别  1 innerText   不识别html标签  去除空格和换行     2、innerHTML   识别html标签">
+<meta name="twitter:description" content="块级元素和行内元素  9/30/2019 8:56:24 PM   1、块级元素 ：常见块级元素有：  1&amp;lt;div&amp;gt; &amp;lt;p&amp;gt;   &amp;lt; h1&amp;gt;~&amp;lt;h6&amp;gt;  &amp;lt;ol&amp;gt;  &amp;lt;li&amp;gt;等  特点：  1、总是从新行开始，每个块级元素都占据一整行或多整行  2、宽、高、padding、margin都可以设置  3、可以容纳其他块级元素">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,123 +154,67 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-javaScript2" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-node.js/css1" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="javaScipt中的DOM及其相关操作2—–操作元素"><a href="#javaScipt中的DOM及其相关操作2—–操作元素" class="headerlink" title="javaScipt中的DOM及其相关操作2—–操作元素"></a>javaScipt中的DOM及其相关操作2—–操作元素</h1><p>我们可以利用DOM操作元素来改变元素里面的内容、属性等。</p>
-<h2 id="1、-改变元素的内容"><a href="#1、-改变元素的内容" class="headerlink" title="1、 改变元素的内容"></a>1、 改变元素的内容</h2><p>(1)element.innerText  <br><br>(2)element.innerHTML   <br></p>
-<p><strong>注意：innerTetxt和innerHTML区别</strong> <br></p>
-<p>1 innerText   不识别html标签  去除空格和换行     <br><br>2、innerHTML   识别html标签    保留空格和换行   【 使用最多】  <br></p>
-<p>例子： 要求：当我们点击了按钮，div里面的文字变为显示系统当前事件</p>
-<pre><code>&lt;div&gt; 系统的当前时间&lt;/div&gt;
+        <hr>
+<h1 id="块级元素和行内元素"><a href="#块级元素和行内元素" class="headerlink" title="块级元素和行内元素"></a>块级元素和行内元素</h1><hr>
+<p> 9/30/2019 8:56:24 PM</p>
+<br>
 
-&lt;script&gt;
+<h2 id="1、块级元素-："><a href="#1、块级元素-：" class="headerlink" title="1、块级元素 ："></a>1、块级元素 ：</h2><p><strong>常见块级元素有：</strong> </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt; &lt;p&gt;   &lt; h1&gt;~&lt;h6&gt;  &lt;ol&gt;  &lt;li&gt;等</span><br></pre></td></tr></table></figure>
 
-//1、获取元素
-var btn = document.querySelector(&apos;button&apos;);
-var div = document.querySelector(&apos;div&apos;);
+<p>特点：<br>  1、总是从新行开始，每个块级元素都占据一整行或多整行<br>  2、宽、高、padding、margin都可以设置<br>  3、可以容纳其他块级元素<br>  4、默认宽度是100%</p>
+<p><strong>注意</strong>：文字类的块级元素里不能嵌套块级元素 例如：  <code>&lt;p&gt;  、&lt;h1&gt;~&lt;h6&gt; 、 &lt;dt&gt;</code> 等</p>
+<hr>
+<h2 id="2、-行内元素-："><a href="#2、-行内元素-：" class="headerlink" title="2、 行内元素 ："></a>2、 行内元素 ：</h2><p><strong>常见行内元素有：</strong>  <code>&lt;a&gt; 、 &lt;span&gt; 、 &lt;em&gt;、 &lt;strong&gt; 、&lt;del&gt;、 &lt;s&gt;、 &lt;ins&gt;、 &lt;u&gt;</code> , 其中<strong>span</strong>是最常见的行内元素</p>
+<p>特点：<br> 1、相邻行内元素都在一行上<br> 2、<strong>宽、高无效</strong> ，但水平方向的padding和margin可以设置<br> 3、默认宽度就是它本身的宽度,宽度随着内容的多少自适应变化    </p>
+<hr>
+<h2 id="3、行内块元素"><a href="#3、行内块元素" class="headerlink" title="3、行内块元素"></a>3、行内块元素</h2><p> 在行内元素中有几个特殊的标签  <code>&lt;img/&gt; 、&lt;input/&gt; 、&lt;td&gt;</code><strong>可以对他们设置宽高和对齐属性</strong>，我们称之为行内块元素。例如：</p>
+<blockquote>
+<pre><code>&lt;input type=&quot;text&quot;  style=&quot;height:200px&quot; /&gt;
+&lt;input type=&quot;text&quot; style=&quot;height:200px&quot; /&gt;</code></pre></blockquote>
+<p>特点：<br> 1、和相邻行内元素在一行上<br> 2、默认宽度就是它本身内容的宽度<br> 3、<strong>宽度、行高、外边距、内边距都可以设置</strong></p>
+<hr>
+<h2 id="4、标签显示模式转换-display"><a href="#4、标签显示模式转换-display" class="headerlink" title="4、标签显示模式转换:display"></a>4、标签显示模式转换:display</h2><p>1、块级标签转成行内标签：<br>语法：  <strong>display：inline;</strong><br>2、行内标签转换成块级标签:<br>语法： ** display: block;**<br>3、行内标签转换成行内块标签：<br>语法:  <strong>display:inline-block;</strong></p>
+<p>例如HTML中有如下代码</p>
+<pre><code>&lt;div &gt;123&lt;/div       &lt;!--块级元素--&gt;
+&lt;div&gt;456&lt;/div&gt;
 
-//2、绑定事件
-btn.onclick = function () {
-  var date=new Date();
-  div.innerText=getTime();
-}
-
-// 获取系统的当前时间
-function getTime() {
-  var time = new Date();
-  var h = time.getHours();
-  var m = time.getMinutes();
-  var s = time.getSeconds();
-    s = s &lt; 10 ? &quot;0&quot; + s : s;
-    h = h&lt; 10? &quot;0&quot;+h :h;
-    m = m&lt; 10? &quot;0&quot;+m :m;
-    return h + &quot;:&quot; + m + &quot;:&quot; + s ;
-}
-
-  //我们元素可以不用添加注册事件
-var p =document.querySelector(&apos;p&apos;);
-p.innerText=getTime();  //页面一加载就直接显示
-
-&lt;/script&gt;</code></pre><h2 id="2、修改元素属性"><a href="#2、修改元素属性" class="headerlink" title="2、修改元素属性"></a>2、修改元素属性</h2><p>属性有：src 、href 、id 、alt 、title等<br></p>
-<p>例子：当点击杨紫按钮时，呈现杨紫的图片，鼠标放在图片上提示“杨紫”。当点击李现按钮时，显示李现的图片，鼠标放在图片上提示“李现”。<br><br>分析：可以通过修改图片的src属性和title属性来实现</p>
-<pre><code>&lt;button id=&quot;yz&quot;&gt;杨紫&lt;/button&gt;
-&lt;button id=&quot;lx&quot;&gt;李现&lt;/button&gt;
-&lt;br/&gt;
-&lt;img src=&quot;../image/lx.png&quot; alt=&quot;&quot; title=&quot;李现&quot;&gt;
-
-&lt;script&gt;
-//1、获取元素   
-var yz = document.getElementById(&apos;yz&apos;);     //id
-var lx = document.getElementById(&apos;lx&apos;);       /id
-var  img =document.querySelector(&apos;img&apos;);      //标签
-
-//2、注册事件
-//当点击杨紫按钮时，scr、title都修改为杨紫的
-yz.onclick = function () {   
-   img.src = &quot;../image/yz.jpg&quot;;              //修改img的src属性
-   img.title=&quot;杨紫&quot;;                         //修改img的title属性
-}
-
-//当点击李现按钮时，scr、title都修改为李现的
-lx.onclick = function () {  
-   img.src = &quot;../image/lx.png&quot;;      
-   img.title=&quot;李现&quot;;
-}
-
-&lt;/script&gt;</code></pre><h2 id="3、修改样式属性"><a href="#3、修改样式属性" class="headerlink" title="3、修改样式属性"></a>3、修改样式属性</h2><p>样式属性操作：  修改元素的大小、颜色、位置等样式 <br><br>1、element.style  行内样式操作          【如果样式较少，或者功能简单的情况下使用】  <br><br>2、element.className    类名样式操作    【我们可以通过修改元素的className更改元素的样式 ，适合于样式较多，或者功能复杂的情况下使用】    <br><br>【注意】：className会直接更改元素的类名，会覆盖以前的类名<br>3、如果想要保留原先的类名，我们可以使用多类名选择器  this.className=”change first”;  //添加多个类名</p>
-<p>例如：给div修改样式属性</p>
-<pre><code>&lt;div class=&quot;first&quot;&gt;文字&lt;/div&gt;
-&lt;script&gt;
-var div =document.querySelector(&apos;.first&apos;);
-div.onclick=function () {
-   //里面的属性采用驼峰命名法
-    this.style.backgroundColor = &apos;purple&apos;;//修改背景颜色
-    this.style.color=&quot;#ccc&quot;;//字体颜色
-    this.style.fontSize=&quot;18px&quot;;   //字体大小
-}
-&lt;/script&gt;</code></pre><p>但是以上方法修改样式，只适合修改较少的样式，如果样式较多的情况下，比较麻烦 。<br><br>若是需要修改的样式较多时，我们可以使用添加类名的方法 。</p>
-<p>如下：<br><br>我们先在css样式中添加一个类 ，来写改变后的样式</p>
+&lt;span&gt;789&lt;/span      &lt;!--行内元素--&gt;
+&lt;span&gt;123&lt;/span&gt;
+&lt;a href=&quot;#&quot;&gt;123&lt;/a&gt;
+&lt;a href=&quot;#&quot;&gt;123&lt;/a&gt;</code></pre><p>则可以在css中设置样式：</p>
+<blockquote>
 <pre><code>&lt;style&gt;
-.change {
-color: #ccc;
-margin-top:100px;
-background-color: purple;
+
+div{          
+width: 200px;
+height: 100px;
+background-color: pink;
+display:inline;               /*块级元素转成行内标签显示模式*/
 }
 
-&lt;/style&gt;</code></pre><p>然后，再通过修改元素类名的方法，给元素添加、修改样式</p>
-<pre><code>&lt;script&gt;
-var p =document.querySelector(&apos;p&apos;);
-
-p.onclick=function () {
-this.className=&quot;change &quot;;   //让我们当前元素的类名改为了 change ，这样就有了change类中的样式
+span{
+height: 100px ;
+width: 200px;
+background-color: red;
+display: block;                 /*行内元素转成块级标签显示模式*/
 }
 
-&lt;/script&gt;</code></pre><p>【注意】：className会直接更改元素的类名，会覆盖以前的类名<br><br>如果想要保留原先的类名，我们可以使用多类名选择器  this.className=”change first”;  //添加多个类名</p>
-<h2 id="4、操作表单元素属性"><a href="#4、操作表单元素属性" class="headerlink" title="4、操作表单元素属性"></a>4、操作表单元素属性</h2><p>表单属性：type value checked selected  disabled(表单是否使用)</p>
-<pre><code>&lt;button&gt;按钮&lt;/button&gt;
-&lt;input type=&quot;text&quot; value=&quot;输入内容&quot; class=&quot;ipt&quot;&gt;
-&lt;input type=&quot;checkbox&quot; class=&quot;checks&quot;&gt;
+a{
+width: 50px;
+height: 20px;
+background-color: green;
+display: inline-block;          /*行内元素转换成行内块标签显示模式*/
 
-&lt;script&gt;
-   var btn=document.querySelector(&quot;button&quot;);
-   var input =document.querySelector(&quot;.ipt&quot;);
-   var checks =document.querySelector(&apos;.checks&apos;);
+}
 
-   btn .onclick=function () {
+&lt;/style&gt;</code></pre></blockquote>
 
-   input.value=&quot;点击了&quot;;//表单里面的文字内容 是通过value修改的   不是innerHTML
-   //如果想要某个表单被禁用 不能再点击 disabled
-   //我们想要在这个按钮 被禁用
-   btn.disabled=true; 
-   // this.disabled=true;   //this指向事件函数的调用者 此处是btn
-
-   checks.checked=true;      //修改复选框的选中状态 true表示被选中 
-
-   }
-&lt;/script&gt;</code></pre>
       
 
       
@@ -349,7 +293,7 @@ this.className=&quot;change &quot;;   //让我们当前元素的类名改为了 
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://MaJ66.github.io/2019/11/03/javaScript2/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://MaJ66.github.io/2019/09/30/node.js/css1/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -363,8 +307,17 @@ this.className=&quot;change &quot;;   //让我们当前元素的类名改为了 
   
 <nav id="article-nav">
   
+    <a href="/2019/10/07/node.js/css选择器/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
   
-    <a href="/2019/11/03/javascript1/" id="article-nav-older" class="article-nav-link-wrap">
+  
+    <a href="/2019/09/29/html/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title"></div>
       <i class="icon-circle-right"></i>
     </a>
