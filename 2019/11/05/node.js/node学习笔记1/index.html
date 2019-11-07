@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Node.js学习笔记node安装下载1、查看当前node环境的版本号  ：  在命令行输入 :   node –version 2、下载 ：https://nodejs.org/en/download/ 3、安装： 一直点击下一步即可，安装后可以覆盖以前的版本。 安装后可以通过在命令行输入node –version来查看是否安装成功和版本号 hello world1、创建JavaScript脚本">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-07T04:16:41.120Z">
+<meta property="og:updated_time" content="2019-11-07T04:24:36.482Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
 <meta name="twitter:description" content="Node.js学习笔记node安装下载1、查看当前node环境的版本号  ：  在命令行输入 :   node –version 2、下载 ：https://nodejs.org/en/download/ 3、安装： 一直点击下一步即可，安装后可以覆盖以前的版本。 安装后可以通过在命令行输入node –version来查看是否安装成功和版本号 hello world1、创建JavaScript脚本">
@@ -163,12 +163,9 @@
 <p>2、下载 ：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a></p>
 <p>3、安装： 一直点击下一步即可，安装后可以覆盖以前的版本。<br> 安装后可以通过在命令行输入node –version来查看是否安装成功和版本号</p>
 <h2 id="hello-world"><a href="#hello-world" class="headerlink" title="hello world"></a>hello world</h2><p>1、创建JavaScript脚本文件<br>2、打开终端，定位到脚本文件所属目录<br>3、输入<code>node 文件名</code> 执行对应的文件<br><strong>注意</strong>：文件名不要使用node.js或者中文来命名。</p>
-<h2 id="http服务器开发"><a href="#http服务器开发" class="headerlink" title="http服务器开发"></a>http服务器开发</h2><pre><code>//你可以使用 Node 非常轻松的构建一个web 服务器
-
-//在node中提供了一个核心模块 ：http 。 http这个模块的职责就是帮你创建编写服务器的
-
-
-//1、加载http核心模块
+<h2 id="http服务器开发"><a href="#http服务器开发" class="headerlink" title="http服务器开发"></a>http服务器开发</h2><p>  你可以使用 Node 非常轻松的构建一个web 服务器</p>
+<p>  在node中提供了一个核心模块 ：http 。 http这个模块的职责就是帮你创建编写服务器的</p>
+<pre><code>//1、加载http核心模块
 
 var http = require(&apos;http&apos;);
 
@@ -207,7 +204,12 @@ console.log(&quot;收到客户端的请求了！！！,请求路径是：&quot;+
 
 server.listen(3000,function(){
     console.log(&apos;服务器启动成功了，可以通过 http://localhost:3000来进行访问&apos;);
-})</code></pre><p>可以采用更简单的方式 ，直接end的同时，发送响应<code>response.end(&quot;hello&quot;)</code>。<br> 由于我们现在的服务器能力还比较弱，无论是什么请求都只能响应 hello<br>思考：<br>    我希望不同的路径的时候响应不同的结果<br>      /index      主页<br>      /login      登陆<br>      /register   注册</p>
+})</code></pre><p>可以采用更简单的方式 ，直接end的同时，发送响应<code>response.end(&quot;hello&quot;)</code>。<br> 由于我们现在的服务器能力还比较弱，无论是什么请求都只能响应 hello</p>
+<ul>
+<li>思考：<br>  我希望不同的路径的时候响应不同的结果<pre><code>/index      主页
+/login      登陆
+/register   注册</code></pre></li>
+</ul>
 <p>我们可以采用判断request.url的方法<br>  可以采用以下方法</p>
 <pre><code>         var http = require(&quot;http&quot;);
 
@@ -241,8 +243,10 @@ server.listen(3000,function(){
 server.listen(3000,function(){
     console.log(&apos;服务器启动成功了，可以通过 http://localhost:3000来进行访问&apos;);
 })</code></pre><h2 id="根据不同请求路径返回不同的数据"><a href="#根据不同请求路径返回不同的数据" class="headerlink" title="根据不同请求路径返回不同的数据"></a>根据不同请求路径返回不同的数据</h2><h2 id="字符乱码问题Content-Type"><a href="#字符乱码问题Content-Type" class="headerlink" title="字符乱码问题Content-Type"></a>字符乱码问题Content-Type</h2><p>  <a href="http://tool.oschina.net/commons" target="_blank" rel="noopener">http://tool.oschina.net/commons</a></p>
-<p>// 中文字符乱码问题</p>
-<p>//在服务器默认发送的数据，其实是utf8 编码的内容，但是浏览器不知道你是utf8编码的内容。<br>// 浏览器在不知道服务器响应内容的编码的情况下会按照当前操作系统的默认编码去解析。<br>// 中文操作系统的默认编码是gbk<br>//解决办法是正确的告诉浏览器我给你发送的内容是什么编码的</p>
+<p>在服务器默认发送的数据，其实是utf8 编码的内容，但是浏览器不知道你是utf8编码的内容。</p>
+<p> 浏览器在不知道服务器响应内容的编码的情况下会按照当前操作系统的默认编码去解析。</p>
+<p> 中文操作系统的默认编码是gbk</p>
+<p>解决办法是正确的告诉浏览器我给你发送的内容是什么编码的</p>
 <p>注意 ：<br>    （1）不同的资源对应的Cntent-Type 是不一样的<br>    （2）图片不需要指定编码<br>    （3）一般只为字符数据才能指定编码</p>
 <pre><code>var http =require(&quot;http&quot;);
 
