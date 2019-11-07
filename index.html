@@ -157,7 +157,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="Node-js学习笔记2"><a href="#Node-js学习笔记2" class="headerlink" title="Node.js学习笔记2"></a>Node.js学习笔记2</h1><ul>
+<li>liebiao</li>
+<li>liebaio </li>
+</ul>
+<h2 id="请求对象Request"><a href="#请求对象Request" class="headerlink" title="请求对象Request"></a>请求对象Request</h2><ul>
+<li>liebiao </li>
+<li><h2 id="Response"><a href="#Response" class="headerlink" title="Response"></a>Response</h2></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">第一段代码</span><br><span class="line">一的人</span><br><span class="line">而发热管</span><br></pre></td></tr></table></figure>
+
+<h2 id="在Node中使用模板引擎"><a href="#在Node中使用模板引擎" class="headerlink" title="在Node中使用模板引擎"></a>在Node中使用模板引擎</h2><p>统一处理静态资源</p>
+<h2 id="服务器渲染"><a href="#服务器渲染" class="headerlink" title="服务器渲染"></a>服务器渲染</h2><h2 id="留言本"><a href="#留言本" class="headerlink" title="留言本"></a>留言本</h2>
       
 
       
@@ -253,8 +264,10 @@ console.log(&quot;收到客户端的请求了！！！,请求路径是：&quot;+
 server.listen(3000,function(){
     console.log(&apos;服务器启动成功了，可以通过 http://localhost:3000来进行访问&apos;);
 })</code></pre><p>可以采用更简单的方式 ，直接end的同时，发送响应<code>response.end(&quot;hello&quot;)</code>。<br> 由于我们现在的服务器能力还比较弱，无论是什么请求都只能响应 hello<br>思考：<br>    我希望不同的路径的时候响应不同的结果<br>      /index      主页<br>      /login      登陆<br>      /register   注册</p>
-<p>我们可以采用判断request.url的方法<br>  可以采用以下方法<br>             var http = require(“http”);</p>
-<pre><code>         var server = http.createServer();  
+<p>我们可以采用判断request.url的方法<br>  可以采用以下方法</p>
+<pre><code>         var http = require(&quot;http&quot;);
+
+         var server = http.createServer();  
 
          server.on(&quot;request&quot;,function(request,response){
          console.log(&quot;收到请求了，请求路径是：&quot;+request.url);
